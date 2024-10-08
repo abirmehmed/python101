@@ -49,3 +49,44 @@ d
  is the private key, and 
 G
  is a predefined point on the curve.
+
+. Encryption (using the Elliptic Curve ElGamal Algorithm as an example)
+Sender's Public Key: The sender will use the recipient’s public key 
+Q
+.
+
+Random Integer: Choose a random integer 
+k
+.
+
+Compute Points: Compute two points:
+
+C
+1
+=
+k
+G
+
+C
+2
+=
+P
++
+k
+Q
+, where 
+P
+ is the plaintext point on the curve.
+
+Ciphertext: The ciphertext is the pair 
+(
+C
+1
+,
+C
+2
+)
+.
+
+4. Decryption
+
